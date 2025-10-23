@@ -16,7 +16,7 @@ app.post( "/api/login", ( req, res ) => {
   const { username, password } = req.body;
 
   // Simple example validation
-  if (username === "admin" && password === "1234" ) {
+  if ( username === "ruwan" && password === "1234" ) {
     const token = jwt.sign({ username }, SECRET_KEY, { expiresIn: "1h" });
     res.json({ token });
   } else {
